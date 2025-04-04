@@ -114,8 +114,6 @@ export default function Home() {
 						どんな部活?
 					</div>
 					<div className="w-full flex flex-col gap-4 bg-white px-6 py-8 rounded-lg shadow-md shadow-indigo-200 border border-gray-200">
-						<p className="text-xl font-bold">入部希望の方へ</p>
-						<p>2025-04-04</p>
 						<div className="text-lg">
 							{[
 								<p key={uuidv4()}>
@@ -138,7 +136,7 @@ export default function Home() {
 									<span className="text-rose-400 text-xl font-bold">
 										情報処理センター2F
 									</span>
-									で活動しています
+									(図書館棟2階)で活動しています
 								</p>,
 								<p key={uuidv4()}>
 									プログラミングについて

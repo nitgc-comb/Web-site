@@ -90,7 +90,7 @@ export default function About() {
 						<AwardIcon className="inline mr-2" size={32} />
 						コンテスト参加・受賞歴
 					</div>
-					<div className="w-full flex flex-col gap-4 bg-white px-6 py-8 rounded-lg shadow-md shadow-indigo-200 border border-gray-200">
+					<div className="w-full flex flex-col gap-4 bg-white px-6 py-8 rounded-lg shadow-md shadow-indigo-200 border border-gray-200 overflow-x-auto">
 						<p>
 							第35回 全国高等専門学校 プログラミングコンテスト
 							競技部門「シン・よみがえれ世界遺産」 決勝

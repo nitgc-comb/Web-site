@@ -45,6 +45,9 @@ importers:
       '@vitejs/plugin-react-swc':
         specifier: ^3.8.0
         version: 3.8.1(vite@6.2.5(jiti@2.4.2)(lightningcss@1.29.2)(sass-embedded@1.86.3))
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       sass-embedded:
         specifier: ^1.86.2
         version: 1.86.3
@@ -661,6 +664,11 @@ packages:
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   immutable@5.1.1:
     resolution: {integrity: sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg==}
@@ -1476,6 +1484,8 @@ snapshots:
   graceful-fs@4.2.11: {}
 
   has-flag@4.0.0: {}
+
+  husky@9.1.7: {}
 
   immutable@5.1.1: {}
 
