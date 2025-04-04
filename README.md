@@ -1,12 +1,16 @@
-# React + Vite
+# 岐阜高専コンピュータ倶楽部 ホームページ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 開発手順
 
-Currently, two official plugins are available:
+### 環境構築
+- [Node.js](https://nodejs.org/ja)のインストール (npm等がコマンドラインで使用できることを確認してください)
+- [pnpm](https://pnpm.io/ja/installation)のインストール
+- このリポジトリのクローン  
+`git clone https://github.com/nitgc-comb/Web-site`  
+などでリポジトリを開きvscode等のエディターで開けるようにしてください
+- パッケージのインストール  
+`pnpm install`  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### お願い
+mainブランチを直接変更するのではなくdevelopブランチの内容を変更する形で更新をお願いします。  
+必要に応じてdevelopブランチから分けてもらっても大丈夫です
