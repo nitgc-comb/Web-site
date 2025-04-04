@@ -5,6 +5,7 @@ import { HashRouter, Link, Route, Routes } from "react-router";
 
 import About from "./About.jsx";
 import Home from "./Home.jsx";
+import QandA from "./QandA.jsx";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
@@ -27,6 +28,12 @@ createRoot(document.getElementById("root")).render(
 						>
 							About
 						</Link>
+						<Link
+							to="/qanda"
+							className="hover:text-indigo-400 hover:underline underline-offset-8 decoration-indigo-400 duration-200 font-ubuntu"
+						>
+							Q&A
+						</Link>
 					</div>
 				</header>
 				<div className="w-full text-6xl lg:text-8xl flex justify-center items-center font-bold bg-gradient-to-br from-indigo-300 to-red-300 text-white font-roboto inset-shadow-sm shadow-black animate-hue-rotate">
@@ -38,8 +45,14 @@ createRoot(document.getElementById("root")).render(
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/qanda" element={<QandA />} />
 				</Routes>
 			</HashRouter>
+			<footer className="flex items-center justify-center w-full p-4 bg-gray-50 border-t border-t-indigo-100">
+				<p className="text-sm text-neutral-900 font-ubuntu">
+					© 2025 岐阜高専コンピュータ倶楽部. All rights reserved.
+				</p>
+			</footer>
 		</div>
 	</StrictMode>,
 );

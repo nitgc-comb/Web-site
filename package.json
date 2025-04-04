@@ -9,7 +9,8 @@
 		"preview": "vite preview",
 		"lint": "npx @biomejs/biome lint --write ./src",
 		"format": "npx @biomejs/biome format --write ./src",
-		"check": "npx @biomejs/biome check --write ./src"
+		"check": "npx @biomejs/biome check --write ./src",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "^4.1.1",
@@ -26,6 +27,7 @@
 		"@types/react": "^19.0.10",
 		"@types/react-dom": "^19.0.4",
 		"@vitejs/plugin-react-swc": "^3.8.0",
+		"husky": "^9.1.7",
 		"sass-embedded": "^1.86.2",
 		"vite": "^6.2.0"
 	}
