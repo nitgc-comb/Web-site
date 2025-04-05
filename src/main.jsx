@@ -9,12 +9,14 @@ import QandA from "./QandA.jsx";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<div className="antialiased">
+		<div className="antialiased selection:bg-sky-600/20">
 			<HashRouter>
 				<header className="flex items-center sticky top-0 z-10 w-full p-2 bg-gray-50 border-b border-b-indigo-100">
-					<h1 className="text-lg sm:text-2xl md:text-3xl font-light ml-[5vw] mr-2 text-neutral-900 font-ubuntu">
-						nitgc-comb
-					</h1>
+					<Link to="/">
+						<h1 className="text-lg sm:text-2xl md:text-3xl font-light ml-[5vw] mr-2 text-neutral-900 font-ubuntu select-none">
+							nitgc-comb
+						</h1>
+					</Link>
 					<div className="text-xl mx-4 my-2 space-x-4">
 						<Link
 							to="/"
@@ -37,7 +39,7 @@ createRoot(document.getElementById("root")).render(
 					</div>
 				</header>
 				<div className="w-full text-6xl lg:text-8xl flex justify-center items-center font-bold bg-gradient-to-br from-indigo-300 to-red-300 text-white font-roboto inset-shadow-sm shadow-black animate-hue-rotate">
-					<h2 className="py-8 px-4">
+					<h2 className="py-8 px-4 selection:bg-white/20">
 						<p>Welcome to</p>
 						<p>NITGC Computer Club</p>
 					</h2>

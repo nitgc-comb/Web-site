@@ -6,67 +6,8 @@ import {
 	InfoIcon,
 } from "lucide-react";
 import { Link } from "react-router";
-import {
-	Legend,
-	RadialBar,
-	RadialBarChart,
-	ResponsiveContainer,
-} from "recharts";
 import { v4 as uuidv4 } from "uuid";
-
-import proconImg from "./assets/procon.jpg";
-
-const data = [
-	{
-		name: "18-24",
-		uv: 31.47,
-		pv: 2400,
-		fill: "#8884d8",
-	},
-	{
-		name: "25-29",
-		uv: 26.69,
-		pv: 4567,
-		fill: "#83a6ed",
-	},
-	{
-		name: "30-34",
-		uv: 15.69,
-		pv: 1398,
-		fill: "#8dd1e1",
-	},
-	{
-		name: "35-39",
-		uv: 8.22,
-		pv: 9800,
-		fill: "#82ca9d",
-	},
-	{
-		name: "40-49",
-		uv: 8.63,
-		pv: 3908,
-		fill: "#a4de6c",
-	},
-	{
-		name: "50+",
-		uv: 2.63,
-		pv: 4800,
-		fill: "#d0ed57",
-	},
-	{
-		name: "unknow",
-		uv: 6.67,
-		pv: 4800,
-		fill: "#ffc658",
-	},
-];
-
-const style = {
-	top: "50%",
-	right: 0,
-	transform: "translate(0, -50%)",
-	lineHeight: "24px",
-};
+import PieCharts from "./components/PieCharts.jsx";
 
 export default function Home() {
 	return (
@@ -177,11 +118,14 @@ export default function Home() {
 						<CircleUserIcon className="inline mr-2" size={32} />
 						部員と顧問
 					</div>
-					<div className="w-full flex flex-col gap-4 bg-white px-6 py-8 rounded-lg shadow-md shadow-indigo-200 border border-gray-200">
+					<div className="w-full flex flex-col gap-4 bg-white px-6 py-8 rounded-lg shadow-md shadow-indigo-200 border border-gray-200 overflow-x-auto">
 						<p>2024年度時点</p>
 						<p>
 							<span className="font-bold">部員数</span>:38人
 						</p>
+						<div className="w-full flex justify-center items-center flex-row flex-wrap gap-4">
+							<PieCharts />
+						</div>
 					</div>
 				</section>
 			</div>

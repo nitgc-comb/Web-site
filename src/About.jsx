@@ -19,7 +19,6 @@ export default function About() {
 						<img
 							src={p5jsImg}
 							alt="p5js"
-							srcset=""
 							className="rounded shadow-md shadow-indigo-100 w-full max-w-md"
 						/>
 						<div className="flex flex-col gap-2 w-full max-w-md">
@@ -41,7 +40,6 @@ export default function About() {
 						<img
 							src={gamePlayImg}
 							alt="game create"
-							srcset=""
 							className="rounded shadow-md shadow-indigo-100 w-full max-w-md block lg:hidden"
 						/>
 						<div className="flex flex-col gap-2 w-full max-w-md">
@@ -59,7 +57,6 @@ export default function About() {
 						<img
 							src={gamePlayImg}
 							alt="game create"
-							srcset=""
 							className="rounded shadow-md shadow-indigo-100 w-full max-w-md hidden lg:block"
 						/>
 					</div>
@@ -67,7 +64,6 @@ export default function About() {
 						<img
 							src={proconImg}
 							alt="procon"
-							srcset=""
 							className="rounded shadow-md shadow-indigo-100 w-full max-w-md"
 						/>
 						<div className="flex flex-col gap-2 w-full max-w-md">
